@@ -15,17 +15,11 @@
 <body style="margin: 100px">
 
 	<input id="myInput" type="text" placeholder="Search..">
-
-
-
-
 	<c:forEach var="i" begin="10" step="10" end="${totalrecords}">
 		<a href="users?pageSize=${i}">
 			<button>${i}</button>
 		</a>
 	</c:forEach>
-	
-	
 	
 	<c:if test="${not empty users }">
 		<table border="1" width="50%">
@@ -43,11 +37,6 @@
 			</c:forEach>
 		</table>
 pagesize:<td>${pagesize}</td>  page Number:<td>${pagenumber+1}</td>
-
-
-
-
-
 
 
 
